@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: #081b29;
+    color: white;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 12% 0;
+}
+.link {
+    display: flex;
+    align-items: center;
+}
+#menu {
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+ }
+.link a {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 25px;
+    color: white;
+}
+.link a:last-of-type {
+    margin-right: 30px;
+}
+.link a:hover {
+    color: #00abf0;
+}
+.link .active {
+    color: #00abf0;
+}
+.main-page {
+    margin: 0px 12% 50px;
+    width: 76%;
+    height: 80vh;
+    position: relative;
+}
+h1 {
+    padding-top: 150px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1;
+}
+p {
+    width: 600px;
+    line-height: 1.3;
+    padding-top: 30px;
+}
+.bg-pic {
+    position: absolute;
+    top: -55px;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+}
+.position {
+    color: #00abf0;
+}
+.btn {
+    margin-top: 50px ;
+}
+.btn a:last-of-type {
+    margin-left: 30px;
+    text-decoration: none;
+    padding: 8px 12px;
+    border: 1px solid #00abf0;
+    border-radius: 5px;
+    color: #00abf0;
+}
+.btn a:hover {
+    color: #081b29;
+    background: #00abf0;
+    transition: 0.5s;
+}
+.social {
+position: absolute;
+bottom: 0;
+left: 0;
+}
+.social a {
+    padding: 7px 8px;
+    border-radius: 50%;
+    border: 1px solid #00abf0;
+    margin-right: 10px;
+    background: transparent;
+    color: #00abf0;
+}
+.social a i {
+    font-size: 20px;
+}
+.social a:hover {
+    color: #081b29;
+    background: #00abf0;
+    transition: 0.5s;
+}
+.project a {
+    text-decoration: none;
+}
+.project {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 12% 40px;
+    width: 76%;
+    flex-direction: column;
+}
+.project h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.project a {
+    display: flex;
+    align-items: center;
+}
+.project a p {
+    line-height: 1.5;
+    color: white;
+    padding: 10px;
+
+    border: 1px solid #00abf0;
+    border-left: 0;
+}
+.project a img {
+    width: 50%;
+    margin-bottom: 20px;
+}
+.active-btn {
+    text-decoration: none;
+    padding: 8px 12px;
+    background: #00abf0;
+    color: #081b29;
+    border-radius: 5px;
+    border: 1px solid #00abf0;
+}
+.btn a:first-child:hover {
+    color: #00abf0;
+    background: #081b29;
+    transition: 0.5s;
+}
+@media (max-width: 400px) {
+    #menu {
+        position: absolute;
+        top: 0px;
+        right: 5px;
+        z-index: 100;
+     }
+    .link {
+        flex-direction: column;
+        background: #081b29;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        max-width: 0;
+        transition: max-width 0.7s;
+        overflow: hidden;
+        height: 100vh;
+        top: -5px;
+        right: 0;
+        align-items: flex-start;
+    }
+    .link-dropdown {
+        max-width: 400px;
+    }
+    .link a {
+        padding-top: 20px;
+        padding-left: 20px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-right: unset;
+    }
+    .link a:last-of-type {
+        margin-right: unset;
+    }
+    .nav {
+        position: relative;
+        margin: 5px 5% 0;
+    }
+    .main-page {
+        margin: 0px 5%;
+        width: 90%;
+    }
+    .bg-pic {
+        width: 130%;
+        right: -15px;
+        top: -30px;
+    }
+    h1 {
+        padding-top: 70px;
+    }
+    span {
+        display: block;
+        font-size: 30px;
+        line-height: 1.2;
+        font-weight: 600;
+    }
+    p {
+        width: 100%;
+        font-size: 15px;
+    }
+    .position {
+        font-size: 16px;
+    }
+    .btn {
+        display: flex;
+        justify-content: center;
+    }
+    .project {
+        margin: 40px 5%;
+        width: 90%;
+    }
+    .project a img {
+        width: 100%;
+        margin-bottom: unset;
+    }
+    .project a {
+        flex-direction: column;
+    }
+    .project a p {
+        border-top: unset;
+        border-left: 1px solid #00abf0;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .social {
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
